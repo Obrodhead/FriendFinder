@@ -1,5 +1,5 @@
 # FriendFinder
-Cartoon Friend finder
+Cartoon Friend finder:
 Description:
 The friend finder app is an interactive application that returns cartoon characters as cartoon side kicks.
 
