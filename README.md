@@ -2,7 +2,7 @@
 Cartoon Friend finder:
 
 Description:
-The friend finder app is an interactive application that returns cartoon characters as cartoon side kicks.
+The friend finder app is an interactive application that returns cartoon characters as cartoon friends.
 
 Functionality:
 The user is prompted with a page to start the survey and it takes you to the survey page.
