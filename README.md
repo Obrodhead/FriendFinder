@@ -3,7 +3,7 @@ Cartoon Friend finder
 Description:
 The friend finder app is an interactive application that returns cartoon characters as cartoon side kicks.
 
-Functionality
+Functionality:
 The user is prompted with a page to start the survey and it takes you to the survey page.
 Then you must enter a name and a url for your profile picture.
 You will then answer 10 questions. Each question is on a scale of 1-5, 1 being least likely to identify with the question, and 5 being most likely.
