@@ -13,10 +13,16 @@ Answers are recorded and tried against the list of potential friends and it retu
 Demo
 Check out the application here:
 
-Technologies used
+Technologies used:
+
 HTML
+
 Bootstrap
+
 Css3
+
 Javascript
+
 Node
+
 Express
