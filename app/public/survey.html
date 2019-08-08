@@ -1,0 +1,232 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class = "container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <form role="form" id="survey">
+        <h3>About You</h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+            <h4>Link to photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required>
+        <hr>
+        <div class = "questions"> <h3>Question 1</h3>
+            <h4>You have a desire to be a stick figure</h4>
+                <select class="form-contol" id="x1">
+                <option value></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        <h3>Question 2</h3>
+            <h4>You often daydream about being absorbant</h4>
+                <select class="form-contol" id="x2">
+                <option value></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+        <h3>Question 3</h3>
+            <h4>You want to cause mayhem with a skateboard</h4>
+                <select class="form-contol" id="x3">
+                <option value></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+        <h3>Question 4</h3>
+            <h4>You are cuddly and muscular</h4>
+                <select class="form-control" id="x4">
+                <option value></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+        <h3>Question 5</h3>
+            <h4>You want to eat ice cream out of a pool</h4>
+                <select class="form-control" id="x5">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 6</h3>
+            <h4>You cannot see without glasses</h4>
+                <select class="form-control" id="x6">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 7</h3>
+            <h4>You are good with children</h4>
+                <select class="form-control" id="x7">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 8</h3>
+            <h4>You could live underwater forever</h4>
+                <select class="form-control" id="x8">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        <h3>Question 9</h3>
+            <h4>You believe in ghosts</h4>
+                <select class="form-control" id="x9">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select> 
+        <h3>Question 10</h3>
+            <h4>You believe that you are living in an alternate universe</h4>
+                <select class="form-control" id="x10">
+                <option value></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>     
+        <div>
+            <button type="button" class="btn btn-lg btn-primary mt-5 mb-5" id="submit">Submit to see who your cartoon buddy is!</button>
+        </div>
+        <hr>
+    </div>
+</form>
+    <!-- Modal content -->
+    <div class="modal fade" id="friend-modal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match.name"></h2>
+                    <img id ="match.img" src="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $("#submit").on("click", function(event) {
+       if ($("#name").val().trim() === "") {
+           alert("Please enter a valid name");
+       }
+       else if ($("#photo").val().trim() === ""){
+           alert("Please enter a link for a photo");
+       } else
+       {
+        event.preventDefault();
+        var numberArray = [];
+        for (i = 1; i < 11; i++) {
+            numberArray.push($("#x" + i).val());
+        };
+       
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo:$("#photo").val().trim(),
+            scores: numberArray
+        };
+        console.log(newFriend);
+   
+    $.post("/api/friends", newFriend,
+        function(data) {
+            console.log(data);
+            $("#match-name").text (data.name);
+            $("#match.img").attr ("src",data.photo)
+            $("#friend-modal").modal("show");
+
+        }
+    );
+    $.ajax({url: "api/friends", method: "GET"})
+    .done(function(res){
+        var bestFriend;
+        var currentBest = 100;
+        var differenceArray = [];
+        for (i = 0; i < res.length -1; i++ ) {
+          
+            for(j = 0; j < 10; j++) {
+                var friendsDifference = newFriend.scores[j] - res[i].scores[j];
+                differenceArray.push(Math.abs(friendsDifference));
+               
+            }
+            var difference = differenceArray.reduce(function(total,amount){
+                return total + amount
+            });
+            
+            if (difference < currentBest) {
+                bestFriend = res[i];
+                currentBest = difference;
+                differenceArray = [];
+            }
+            else {
+            differenceArray = [];
+            }
+        
+        };
+        console.log("ive been clicked")
+        var friendName = "<h4>" + bestFriend.name + "<h4>";
+        var friendPic = "<img width='300px' src=" + bestFriend.photo + ">";
+                    
+       ;
+        $(".modal-title").html(friendName);
+        $(".modal-body").html(friendPic);
+        $('#survey')[0].reset();
+                  
+         
+    });
+}
+    return false;
+});
+</script>
