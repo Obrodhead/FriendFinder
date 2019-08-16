@@ -19,8 +19,6 @@ HTML
 
 Bootstrap
 
-Css3
-
 Javascript
 
 Node
